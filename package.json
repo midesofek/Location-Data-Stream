@@ -4,7 +4,7 @@
   "description": "Application responsible for streaming location data to Streamr at intervals",
   "main": "locationStream.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node locationStream.js"
   },
   "author": "Mide Sofek",
   "license": "ISC",
