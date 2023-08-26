@@ -1,8 +1,14 @@
 const axios = require("axios");
+const express = require("express");
 const { StreamrClient } = require("streamr-client");
 const { NO_OF_USERS, STREAM_ID, TIME_INTERVAL, API_URL } = require("./config");
-
 require("dotenv").config();
+
+const app = express();
+
+app.get("/", (req, res) => {
+  res.send("Publishing streams...");
+});
 
 // Initialize the Streamr client
 const streamr = new StreamrClient({
@@ -76,3 +82,5 @@ setInterval(publish, TIME_INTERVAL);
 //   console.log("Time: ", timeReceived);
 //   console.log("Data: ", data.message);
 // });
+
+module.exports = app;
