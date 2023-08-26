@@ -1,0 +1,16 @@
+{
+  "name": "location-data-stream",
+  "version": "1.0.0",
+  "description": "Application responsible for streaming location data to Streamr at intervals",
+  "main": "locationStream.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mide Sofek",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.4.0",
+    "dotenv": "^16.3.1",
+    "streamr-client": "^8.5.5"
+  }
+}
