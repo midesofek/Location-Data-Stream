@@ -2,9 +2,9 @@
   "name": "location-data-stream",
   "version": "1.0.0",
   "description": "Application responsible for streaming location data to Streamr at intervals",
-  "main": "npm install server.js",
+  "main": "server.js",
   "scripts": {
-    "start": "npm install node server.js"
+    "start": "node server.js"
   },
   "author": "Mide Sofek",
   "license": "ISC",
@@ -14,6 +14,9 @@
     "express": "^4.18.2",
     "parcel": "^2.9.3",
     "streamr-client": "^8.5.5"
+  },
+  "engines": {
+    "node": ">=14"
   },
   "devDependencies": {
     "assert": "^2.0.0",
